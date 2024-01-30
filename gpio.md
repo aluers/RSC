@@ -10,10 +10,15 @@ from gpiozero import LED, Button
 Example
 
 led = LED(1)
+
 led = LED("GPIO1")
+
 led = LED("BCM1")
+
 led = LED("BOARD11")
+
 led = LED("WPI0")
+
 led = LED("J8:11")
 
 For driving an output connected to an LED, for example, you use the LED module. You create an instance by passing the GPIO name.
@@ -21,14 +26,19 @@ For driving an output connected to an LED, for example, you use the LED module. 
 #!/usr/bin/python3
 
 from gpiozero import LED
+
 from time import sleep
 
 led = LED(24)
 
 while True:
+   
     led.on()
+    
     sleep(1)
+    
     led.off()
+    
     sleep(1)
 
 
