@@ -31,15 +31,31 @@ from time import sleep
 
 led = LED(24)
 
-while True:
+while True
+   led.on()
+    
+   sleep(1)
+    
+   led.off()
    
-    led.on()
-    
-    sleep(1)
-    
-    led.off()
-    
-    sleep(1)
+   sleep(1)
+   
+GPIO code to turn on and off without timer
+
+   from gpiozero import LED, Button
+  
+   from signal import pause
+
+   led = LED(17)
+
+   button = Button(2)
+
+
+   button.when_pressed = led.on
+
+   button.when_released = led.off
+
+   pause()
 
 
     https://www.ics.com/blog/control-raspberry-pi-gpio-pins-python
