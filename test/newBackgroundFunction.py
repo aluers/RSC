@@ -16,7 +16,7 @@ if not cap.isOpened():
 while cap.isOpened():
         # Capture frame-by-frame
          ret, frame = cap.read()
-        if ret:
+         if ret:
                 # cv2.imshow('Original Image', frame)
 
                 #Resize
