@@ -69,9 +69,9 @@ while cap.isOpened():
                 # Display the resulting frame
                 cv2.imshow('Bounding boxes', frame_out)
 
-        #Break
-        k = cv2.waitKey(1)
-        if k != -1:
+                #Break
+         k = cv2.waitKey(1)
+         if k != -1:
                 break
 
 cap.release()
